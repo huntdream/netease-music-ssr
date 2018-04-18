@@ -1,0 +1,156 @@
+/* common styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+body {
+  background-color: #42474f;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Nav  */
+.nav {
+  height: 46px;
+  width: 890px;
+  margin: 0 auto;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a {
+  display: block;
+  height: 100%;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 46px;
+  text-transform: capitalize;
+}
+
+/* Event */
+.events {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 160px;
+}
+
+.event-wrapper {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event_pic {
+  width: 200px;
+  height: auto;
+}
+
+.event_pic img {
+  width: 100%;
+  height: auto;
+}
+
+.event_name {
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Audio Player */
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 999;
+  background-color: rgb(233, 201, 201);
+  color: #fff;
+  animation: slideIn 0.5s linear;
+  padding: 10px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.player-controls {
+  width: 100%;
+  height: 36px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.btn-controls {
+  display: block;
+  width: 40px;
+  height: 36px;
+  background-size: cover;
+}
+
+.btn-controls.play {
+  background-image: url(./assets/播放.png);
+}
+
+.btn-controls.pause {
+  background-image: url(./assets/播放暂停.png);
+}
+
+.btn-controls:before {
+  content: url(./assets/播放.png);
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.btn-controls.unmuted {
+  background-image: url(./assets/声音.png);
+}
+
+.btn-controls.muted {
+  background-image: url(./assets/静音.png);
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  .event-wrapper {
+    width: 98%;
+    box-sizing: border-box;
+  }
+}

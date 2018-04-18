@@ -1,0 +1,44 @@
+{
+  "name": "netease-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "watch": "webpack -w",
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "big-integer": "^1.6.27",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "isomorphic-fetch": "^2.2.1",
+    "nodemon": "^1.17.3",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2",
+    "request": "^2.85.0",
+    "serialize-javascript": "^1.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.1.0",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
