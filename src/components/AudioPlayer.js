@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { resolve } from 'path'
 
 class AudioPlayer extends Component {
   constructor() {
